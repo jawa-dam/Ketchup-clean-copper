@@ -3,33 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#06070d" />
+  <meta name="theme-color" content="#f5fbff" />
 
   <title>Ketchup &amp; Copper: The Great Cleaning Mystery | Y'all Too</title>
-  <meta name="description" content="Can ketchup clean tarnished copper? Explore the science, watch real experiments, take the quiz, and try the Ketchup Challenge yourself." />
-  <link rel="canonical" href="https://DOMAIN_PENDING/ketchup-copper-discovery" />
+  <meta name="description" content="Can ketchup clean tarnished copper? Join the Y'all Too discovery adventure — watch experiments, make predictions, try the Ketchup Challenge, and test your science knowledge." />
+  <link rel="canonical" href="https://jawa-dam.github.io/Ketchup-clean-copper/" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Ketchup &amp; Copper: The Great Cleaning Mystery | Y'all Too" />
-  <meta property="og:description" content="Can ketchup clean tarnished copper? Explore the science, watch real experiments, take the quiz, and try the Ketchup Challenge yourself." />
+  <meta property="og:description" content="Can ketchup clean tarnished copper? Join the Y'all Too discovery adventure — watch experiments, make predictions, and try the Ketchup Challenge." />
   <meta property="og:site_name" content="Y'all Too" />
-  <meta property="og:url" content="https://DOMAIN_PENDING/ketchup-copper-discovery" />
+  <meta property="og:url" content="https://jawa-dam.github.io/Ketchup-clean-copper/" />
+  <meta property="og:image" content="https://assets.zyrosite.com/YZ9jg46Bljs5wOZR/ketchup-cleans-copper_-before-after-8Hr1l91EM77SM0D5.png" />
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Ketchup &amp; Copper: The Great Cleaning Mystery | Y'all Too" />
-  <meta name="twitter:description" content="Can ketchup clean tarnished copper? Explore the science, watch real experiments, and try the Ketchup Challenge." />
-
-  <!--
-    SOCIAL-SHARING IMAGE
-    =====================
-    Upload the image to this repository or a public CDN, then
-    replace SOCIAL_IMAGE_PENDING and uncomment the two tags below.
-
-    <meta property="og:image" content="SOCIAL_IMAGE_PENDING" />
-    <meta name="twitter:image" content="SOCIAL_IMAGE_PENDING" />
-  -->
+  <meta name="twitter:description" content="Can ketchup clean tarnished copper? Try the experiment and find out!" />
+  <meta name="twitter:image" content="https://assets.zyrosite.com/YZ9jg46Bljs5wOZR/ketchup-cleans-copper_-before-after-8Hr1l91EM77SM0D5.png" />
 
   <meta name="keywords" content="ketchup clean copper, ketchup copper experiment, copper cleaning science, acetic acid copper, citric acid copper, copper tarnish removal, ketchup challenge, y'all too" />
 
@@ -41,56 +31,111 @@
 <body class="kc-page">
 
   <!-- ================================================================
-       NAVIGATION
+       STICKY NAVIGATION + SCROLL PROGRESS
        ================================================================ -->
-  <header class="kc-topbar">
+  <header class="kc-topbar" id="kc-topbar">
     <div class="kc-topbar-inner">
-      <span class="kc-topbar-brand">
-        <span class="kc-brand-yt">Y'ALL TOO</span>
-        <span class="kc-brand-divider">|</span>
-        <span class="kc-brand-kc">KETCHUP &amp; COPPER</span>
-      </span>
+      <a href="#kc-hero" class="kc-topbar-brand" aria-label="Back to top">
+        <img class="kc-topbar-logo" src="https://assets.zyrosite.com/YZ9jg46Bljs5wOZR/gei-logo-gwP3315oRt91xpE8.png" alt="Y'all Too" width="28" height="28" />
+        <span class="kc-topbar-title">KETCHUP &amp; COPPER</span>
+      </a>
+      <nav class="kc-topbar-nav" aria-label="Stage navigation">
+        <a href="#kc-discovery" class="kc-nav-link">Discovery</a>
+        <a href="#kc-prediction" class="kc-nav-link">Predict</a>
+        <a href="#kc-challenge" class="kc-nav-link">Challenge</a>
+        <a href="#kc-sciencelab" class="kc-nav-link">Science</a>
+      </nav>
+    </div>
+    <div class="kc-scroll-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Page scroll progress">
+      <div class="kc-scroll-bar-fill" id="scroll-bar-fill"></div>
     </div>
   </header>
+
+  <!-- ================================================================
+       ACHIEVEMENT TOAST
+       ================================================================ -->
+  <div class="kc-toast" id="achievement-toast" aria-live="polite" aria-atomic="true">
+    <div class="kc-toast-inner">
+      <span class="kc-toast-icon" id="toast-icon"></span>
+      <div class="kc-toast-text">
+        <strong id="toast-title"></strong>
+        <span id="toast-desc"></span>
+      </div>
+    </div>
+  </div>
 
   <main>
 
     <!-- ================================================================
-         HERO SECTION
+         STAGE 1 — THE GREAT CLEANING MYSTERY
          ================================================================ -->
-    <section class="kc-hero" aria-labelledby="kc-hero-heading">
-      <div class="kc-container">
-        <span class="kc-hero-kicker">A Y'all Too Discovery</span>
-        <h1 id="kc-hero-heading">KETCHUP &amp; COPPER:<br /><span>THE GREAT CLEANING MYSTERY!</span></h1>
-        <p class="kc-hero-subtitle">One accidental squeeze. 20 forgotten minutes. A kitchen discovery that turned science on its head. Can a common condiment really clean tarnished copper?</p>
+    <section class="kc-hero" id="kc-hero" aria-labelledby="hero-heading">
+      <div class="kc-hero-decor" aria-hidden="true">
+        <div class="kc-coin kc-coin-1"></div>
+        <div class="kc-coin kc-coin-2"></div>
+        <div class="kc-coin kc-coin-3"></div>
+        <div class="kc-drip kc-drip-1"></div>
+        <div class="kc-drip kc-drip-2"></div>
+      </div>
+      <div class="kc-container kc-hero-content">
+        <img class="kc-hero-logo" src="https://assets.zyrosite.com/YZ9jg46Bljs5wOZR/gei-logo-gwP3315oRt91xpE8.png" alt="Y'all Too — Genesis Engineered Interpretations" width="72" height="72" />
+        <span class="kc-hero-kicker">A Y'all Too Discovery Adventure</span>
+        <h1 id="hero-heading"><span class="kc-hero-line1">KETCHUP &amp; COPPER</span><br /><span class="kc-hero-line2">THE GREAT CLEANING MYSTERY!</span></h1>
+        <p class="kc-hero-desc">One accidental squeeze. Twenty forgotten minutes. One unexpected discovery. What happens when ketchup meets tarnished copper?</p>
         <div class="kc-hero-ctas">
-          <a class="kc-btn-primary" href="#kc-videos">Watch the Experiments</a>
-          <a class="kc-btn-secondary" href="#kc-worksheet">Try the Ketchup Challenge</a>
+          <a class="kc-btn kc-btn-cyan" href="#kc-discovery">START THE ADVENTURE</a>
+          <a class="kc-btn kc-btn-outline" href="#kc-videos">WATCH THE EXPERIMENT</a>
+        </div>
+        <div class="kc-scroll-hint" aria-hidden="true">
+          <span>Scroll to explore</span>
+          <svg class="kc-scroll-arrow" width="20" height="24" viewBox="0 0 20 24"><path d="M10 2v18M3 15l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
       </div>
     </section>
 
     <!-- ================================================================
-         FEATURED VIDEOS
+         STAGE 2 — THE DISCOVERY
          ================================================================ -->
-    <section class="kc-videos" id="kc-videos" aria-labelledby="kc-videos-heading">
+    <section class="kc-stage kc-stage-discovery" id="kc-discovery" aria-labelledby="discovery-heading">
       <div class="kc-container">
-        <span class="kc-section-label cyan">Video Evidence</span>
-        <h2 class="kc-section-title" id="kc-videos-heading">See What Happened</h2>
-        <p class="kc-section-subtitle">Watch real experiments testing whether ketchup can clean tarnished copper.</p>
+        <div class="kc-stage-header">
+          <span class="kc-stage-badge cyan">Stage 1</span>
+          <h2 class="kc-stage-title" id="discovery-heading">The Discovery</h2>
+          <p class="kc-stage-desc">How an accidental ketchup spill led to a surprising observation.</p>
+        </div>
+
+        <div class="kc-story-card">
+          <span class="kc-card-label copper">My Unexpected Observation</span>
+          <p>I was making a burger and fries. Before putting ketchup on my burger, I squeezed the first bit into my copper sink because I didn't want the watery ketchup to get on my bread or burger patty.</p>
+          <p>I accidentally left it there for about 20 minutes.</p>
+          <blockquote class="kc-highlight">
+            When I returned and rinsed the ketchup away, the spots where the ketchup had dripped looked clean and shiny. I had not wiped or scrubbed those spots.
+          </blockquote>
+          <p>That unexpected observation made me curious: could ordinary ketchup help remove tarnish from copper?</p>
+          <p class="kc-disclaimer">Ketchup contains acidic ingredients that may react with some tarnished copper surfaces, but this is based on a single accidental observation &mdash; not a controlled scientific study. Results may vary by material, finish, and ketchup brand.</p>
+        </div>
+
+        <div class="kc-before-after">
+          <img src="https://assets.zyrosite.com/YZ9jg46Bljs5wOZR/ketchup-cleans-copper_-before-after-8Hr1l91EM77SM0D5.png" alt="Before and after comparison showing a copper surface before and after ketchup was rinsed away" loading="lazy" />
+        </div>
+
+        <div class="kc-videos-header" id="kc-videos">
+          <span class="kc-card-label cyan">Video Evidence</span>
+          <h3>See What Happened</h3>
+          <p>Watch real experiments testing whether ketchup can clean tarnished copper.</p>
+        </div>
 
         <div class="kc-video-grid">
-
           <article class="kc-video-card is-featured">
             <div class="kc-video-embed" data-video-id="iOmHrmaAgsk">
               <img class="kc-video-thumb" src="https://img.youtube.com/vi/iOmHrmaAgsk/hqdefault.jpg" alt="Play: The Original Discovery" loading="eager" />
-              <button class="kc-video-play" aria-label="Play The Original Discovery video">
+              <button class="kc-play-btn" aria-label="Play The Original Discovery video">
                 <svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#f00"/><path d="M45 24L27 14v20" fill="#fff"/></svg>
               </button>
             </div>
-            <div class="kc-video-info">
+            <div class="kc-video-meta">
               <span class="kc-video-badge featured">Original Discovery</span>
-              <h3>The Copper Sink Experiment</h3>
+              <h4>The Copper Sink Experiment</h4>
               <p>Watch the firsthand discovery &mdash; ketchup left on a copper sink for about 20 minutes produces a surprising result.</p>
             </div>
           </article>
@@ -98,13 +143,13 @@
           <article class="kc-video-card">
             <div class="kc-video-embed" data-video-id="3m9YEL2NDfM">
               <img class="kc-video-thumb" src="https://img.youtube.com/vi/3m9YEL2NDfM/hqdefault.jpg" alt="Play: The Follow-Up Test" loading="lazy" />
-              <button class="kc-video-play" aria-label="Play The Follow-Up Test video">
+              <button class="kc-play-btn" aria-label="Play The Follow-Up Test video">
                 <svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#f00"/><path d="M45 24L27 14v20" fill="#fff"/></svg>
               </button>
             </div>
-            <div class="kc-video-info">
+            <div class="kc-video-meta">
               <span class="kc-video-badge">Follow-Up Test</span>
-              <h3>Testing on More Copper</h3>
+              <h4>Testing on More Copper</h4>
               <p>A controlled follow-up experiment on additional copper surfaces.</p>
             </div>
           </article>
@@ -112,13 +157,13 @@
           <article class="kc-video-card">
             <div class="kc-video-embed" data-video-id="7g8Ec0KkYQE">
               <img class="kc-video-thumb" src="https://img.youtube.com/vi/7g8Ec0KkYQE/hqdefault.jpg" alt="Play: Before and After Comparison" loading="lazy" />
-              <button class="kc-video-play" aria-label="Play Before and After Comparison video">
+              <button class="kc-play-btn" aria-label="Play Before and After Comparison video">
                 <svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#f00"/><path d="M45 24L27 14v20" fill="#fff"/></svg>
               </button>
             </div>
-            <div class="kc-video-info">
+            <div class="kc-video-meta">
               <span class="kc-video-badge">Comparison</span>
-              <h3>Before &amp; After Results</h3>
+              <h4>Before &amp; After Results</h4>
               <p>Side-by-side comparison of copper surfaces before and after the ketchup experiment.</p>
             </div>
           </article>
@@ -126,313 +171,296 @@
           <article class="kc-video-card">
             <div class="kc-video-embed" data-video-id="tY7hCDz_Wwc">
               <img class="kc-video-thumb" src="https://img.youtube.com/vi/tY7hCDz_Wwc/hqdefault.jpg" alt="Play: The Extended Experiment" loading="lazy" />
-              <button class="kc-video-play" aria-label="Play The Extended Experiment video">
+              <button class="kc-play-btn" aria-label="Play The Extended Experiment video">
                 <svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#f00"/><path d="M45 24L27 14v20" fill="#fff"/></svg>
               </button>
             </div>
-            <div class="kc-video-info">
+            <div class="kc-video-meta">
               <span class="kc-video-badge">Deep Dive</span>
-              <h3>The Extended Experiment</h3>
+              <h4>The Extended Experiment</h4>
               <p>A detailed look at the full experiment process and unexpected findings.</p>
             </div>
           </article>
-
         </div>
       </div>
     </section>
 
     <!-- ================================================================
-         THE STORY
+         STAGE 3 — MAKE YOUR PREDICTION
          ================================================================ -->
-    <section class="kc-story" aria-labelledby="kc-story-heading">
+    <section class="kc-stage kc-stage-predict" id="kc-prediction" aria-labelledby="prediction-heading">
       <div class="kc-container">
-        <span class="kc-section-label copper">My Unexpected Observation</span>
-        <h2 class="kc-section-title" id="kc-story-heading">How It Started</h2>
-        <div class="kc-story-text">
-          <p>I was making a burger and fries. Before putting ketchup on my burger, I squeezed the first bit into my copper sink because I didn't want the watery ketchup to get on my bread or burger patty.</p>
-          <p>I accidentally left it there for about 20 minutes.</p>
-          <div class="kc-story-highlight">
-            When I returned and rinsed the ketchup away, the spots where the ketchup had dripped looked clean and shiny. I had not wiped or scrubbed those spots.
-          </div>
-          <p>That unexpected observation made me curious: could ordinary ketchup help remove tarnish from copper?</p>
-          <p>Ketchup contains acidic ingredients that may react with some tarnished copper surfaces, but this is based on a single accidental observation &mdash; not a controlled scientific study. Results may vary by material, finish, and ketchup brand.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================================================================
-         EDUCATIONAL SCIENCE SECTION
-         ================================================================ -->
-    <section class="kc-science" id="kc-science" aria-labelledby="kc-science-heading">
-      <div class="kc-container">
-        <span class="kc-section-label pink">The Science</span>
-        <h2 class="kc-section-title" id="kc-science-heading">The Secret Is Chemistry &mdash; Not Magic!</h2>
-        <p class="kc-section-subtitle">Understanding why ketchup might clean copper takes us into the world of acids and chemical reactions.</p>
-
-        <div class="kc-learning-cards">
-          <article class="kc-learn-card">
-            <div class="kc-learn-icon acid" aria-hidden="true">&#129514;</div>
-            <h3>Acetic Acid (Vinegar)</h3>
-            <p>Ketchup contains vinegar, which is acetic acid. This weak acid can dissolve copper oxide &mdash; the dark tarnish that forms on copper surfaces over time.</p>
-          </article>
-
-          <article class="kc-learn-card">
-            <div class="kc-learn-icon citric" aria-hidden="true">&#127813;</div>
-            <h3>Citric Acid (Tomatoes)</h3>
-            <p>Tomatoes are naturally acidic, containing citric acid. Working alongside the vinegar, this provides a second pathway for breaking down copper tarnish.</p>
-          </article>
-
-          <article class="kc-learn-card">
-            <div class="kc-learn-icon reaction" aria-hidden="true">&#9883;</div>
-            <h3>The Chemical Reaction</h3>
-            <p>When these acids contact copper oxide (CuO), they break it into soluble copper salts that rinse away with water &mdash; revealing the clean copper underneath.</p>
-          </article>
+        <div class="kc-stage-header">
+          <span class="kc-stage-badge blue">Stage 2</span>
+          <h2 class="kc-stage-title" id="prediction-heading">Make Your Prediction</h2>
+          <p class="kc-stage-desc">Before trying the experiment, put on your scientist hat and make a prediction.</p>
         </div>
 
-        <div class="kc-safety-notice">
-          <strong>Safety Notice:</strong> This experiment uses ordinary household ketchup. Do not mix ketchup with cleaning chemicals. Test only on items you own and have confirmed are solid copper. Do not use on collectible coins, plated items, lacquered surfaces, or items with gemstones. Always check manufacturer care instructions first. Results may vary. This is an observation-based activity, not a scientifically proven cleaning method.
-        </div>
-      </div>
-    </section>
+        <div class="kc-predict-card">
+          <p class="kc-predict-question">What do you predict will happen when ketchup sits on a tarnished copper surface for 20 minutes?</p>
 
-    <!-- ================================================================
-         PREDICTION ACTIVITY
-         ================================================================ -->
-    <section class="kc-prediction" id="kc-prediction" aria-labelledby="kc-prediction-heading">
-      <div class="kc-container">
-        <span class="kc-section-label">Interactive Activity</span>
-        <h2 class="kc-section-title" id="kc-prediction-heading">Put Your Scientist Hat On!</h2>
-        <p class="kc-section-subtitle">Before trying the experiment, make a prediction. What do you think will happen?</p>
-
-        <p class="kc-prediction-question">What do you predict will happen when ketchup sits on a tarnished copper surface for 20 minutes?</p>
-
-        <div class="kc-options" id="prediction-options" role="group" aria-label="Prediction choices">
-          <button class="kc-option-btn" data-answer="a">
-            <span class="kc-option-letter">A</span>
-            <span>Nothing &mdash; ketchup is just a condiment</span>
-          </button>
-          <button class="kc-option-btn" data-answer="b">
-            <span class="kc-option-letter">B</span>
-            <span>The copper will turn green</span>
-          </button>
-          <button class="kc-option-btn" data-answer="c" data-correct="true">
-            <span class="kc-option-letter">C</span>
-            <span>The tarnish will start to dissolve, revealing shinier copper</span>
-          </button>
-          <button class="kc-option-btn" data-answer="d">
-            <span class="kc-option-letter">D</span>
-            <span>The ketchup will permanently stain the copper</span>
-          </button>
-        </div>
-
-        <div class="kc-feedback" id="prediction-feedback-correct">
-          Great prediction! The acids in ketchup (acetic acid from vinegar and citric acid from tomatoes) can dissolve copper oxide tarnish, revealing the cleaner copper beneath.
-        </div>
-        <div class="kc-feedback" id="prediction-feedback-incorrect">
-          Not quite! The acids in ketchup (acetic acid from vinegar and citric acid from tomatoes) can actually dissolve copper oxide tarnish. The tarnish breaks down into soluble salts that rinse away with water.
-        </div>
-      </div>
-    </section>
-
-    <!-- ================================================================
-         OBSERVATION WORKSHEET
-         ================================================================ -->
-    <section class="kc-worksheet" id="kc-worksheet" aria-labelledby="kc-worksheet-heading">
-      <div class="kc-container">
-        <span class="kc-section-label cyan">The Ketchup Challenge</span>
-        <h2 class="kc-section-title" id="kc-worksheet-heading">Your Turn: Observe, Compare, Discover!</h2>
-        <p class="kc-section-subtitle">Follow these five steps to run your own ketchup-and-copper experiment. Check off each step as you complete it.</p>
-
-        <div class="kc-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="5" aria-label="Worksheet progress">
-          <div class="kc-progress-fill" id="worksheet-progress"></div>
-        </div>
-
-        <ol class="kc-steps" id="worksheet-steps">
-          <li class="kc-step" data-step="1">
-            <button class="kc-step-check" aria-label="Mark step 1 as complete"></button>
-            <div>
-              <h3>Gather Your Materials</h3>
-              <p>You need: a bottle of ketchup, a copper item (penny, jewelry, or small copper piece you own), paper towels, a camera or phone, and a timer.</p>
-            </div>
-          </li>
-          <li class="kc-step" data-step="2">
-            <button class="kc-step-check" aria-label="Mark step 2 as complete"></button>
-            <div>
-              <h3>Document the Before</h3>
-              <p>Take a clear, well-lit photograph of the tarnished copper surface. Note the lighting conditions and camera angle so you can replicate them later.</p>
-            </div>
-          </li>
-          <li class="kc-step" data-step="3">
-            <button class="kc-step-check" aria-label="Mark step 3 as complete"></button>
-            <div>
-              <h3>Apply Ketchup &amp; Wait</h3>
-              <p>Apply a small amount of ketchup to a test area. Set a timer for 20 minutes. Record the ketchup brand and variety you used.</p>
-            </div>
-          </li>
-          <li class="kc-step" data-step="4">
-            <button class="kc-step-check" aria-label="Mark step 4 as complete"></button>
-            <div>
-              <h3>Rinse &amp; Observe</h3>
-              <p>When the timer goes off, rinse the area with water only &mdash; do not scrub. Observe carefully: did the surface change? Look the same? Something unexpected?</p>
-            </div>
-          </li>
-          <li class="kc-step" data-step="5">
-            <button class="kc-step-check" aria-label="Mark step 5 as complete"></button>
-            <div>
-              <h3>Document the After</h3>
-              <p>Photograph the tested area under the same lighting and at the same angle as your before photo. Compare the two images side by side. Record your honest findings.</p>
-            </div>
-          </li>
-        </ol>
-
-        <div class="kc-worksheet-done" id="worksheet-done">
-          Experiment complete! You've followed the scientific method: observe, hypothesize, test, and record. Share your results with the community!
-        </div>
-      </div>
-    </section>
-
-    <!-- ================================================================
-         Y'ALL TOO RADIO
-         ================================================================ -->
-    <section class="kc-radio" id="kc-radio" aria-labelledby="kc-radio-heading">
-      <div class="kc-container">
-        <span class="kc-section-label pink">Featured on Y'all Too Radio</span>
-        <h2 class="kc-section-title" id="kc-radio-heading">Y'all Too Radio: The Ketchup Episode</h2>
-        <p class="kc-section-subtitle">Hear the full story, the science behind it, and what the community is discovering.</p>
-
-        <div class="kc-radio-card">
-          <div class="kc-radio-embed" data-video-id="tY7hCDz_Wwc">
-            <img class="kc-video-thumb" src="https://img.youtube.com/vi/tY7hCDz_Wwc/hqdefault.jpg" alt="Play: Y'all Too Radio — The Ketchup Episode" loading="lazy" />
-            <button class="kc-video-play" aria-label="Play Y'all Too Radio episode">
-              <svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#f00"/><path d="M45 24L27 14v20" fill="#fff"/></svg>
+          <div class="kc-choices" id="prediction-choices" role="group" aria-label="Prediction choices">
+            <button class="kc-choice" data-answer="a">
+              <span class="kc-choice-letter">A</span>
+              <span class="kc-choice-text">Nothing &mdash; ketchup is just a condiment</span>
+            </button>
+            <button class="kc-choice" data-answer="b">
+              <span class="kc-choice-letter">B</span>
+              <span class="kc-choice-text">The copper will turn green</span>
+            </button>
+            <button class="kc-choice" data-answer="c" data-correct="true">
+              <span class="kc-choice-letter">C</span>
+              <span class="kc-choice-text">The tarnish may start to dissolve, revealing shinier copper</span>
+            </button>
+            <button class="kc-choice" data-answer="d">
+              <span class="kc-choice-letter">D</span>
+              <span class="kc-choice-text">The ketchup will permanently stain the copper</span>
             </button>
           </div>
-          <div class="kc-radio-info">
-            <span class="kc-radio-badge">Y'all Too Radio</span>
-            <h3>The Full Story &amp; Community Discussion</h3>
-            <p>From the accidental discovery to the community experiments &mdash; hear it all in this special Y'all Too Radio episode.</p>
+
+          <div class="kc-feedback" id="predict-fb-correct">
+            Great prediction! The acids in ketchup (acetic acid from vinegar and citric acid from tomatoes) may dissolve copper oxide tarnish, potentially revealing cleaner copper beneath. Results can vary depending on the surface and conditions.
+          </div>
+          <div class="kc-feedback" id="predict-fb-incorrect">
+            Not quite! The acids in ketchup (acetic acid from vinegar and citric acid from tomatoes) may dissolve copper oxide tarnish. The tarnish can break down into soluble salts that rinse away with water &mdash; though results vary depending on the surface and conditions.
           </div>
         </div>
       </div>
     </section>
 
     <!-- ================================================================
-         DISCOVERY QUIZ
+         STAGE 4 — THE KETCHUP CHALLENGE
          ================================================================ -->
-    <section class="kc-quiz" id="kc-quiz" aria-labelledby="kc-quiz-heading">
+    <section class="kc-stage kc-stage-challenge" id="kc-challenge" aria-labelledby="challenge-heading">
       <div class="kc-container">
-        <span class="kc-section-label">Test Your Knowledge</span>
-        <h2 class="kc-section-title" id="kc-quiz-heading">The Ketchup &amp; Copper Discovery Quiz</h2>
-        <p class="kc-section-subtitle">See how much you've learned about the science behind this surprising discovery.</p>
-
-        <div class="kc-quiz-questions" id="quiz-questions">
-
-          <div class="kc-quiz-q" data-question="1">
-            <span class="kc-quiz-q-num">Question 1 of 3</span>
-            <h3>What ingredients in ketchup may help clean copper tarnish?</h3>
-            <div class="kc-options" role="group" aria-label="Question 1 choices">
-              <button class="kc-option-btn" data-answer="a">
-                <span class="kc-option-letter">A</span>
-                <span>Sugar and salt</span>
-              </button>
-              <button class="kc-option-btn" data-answer="b" data-correct="true">
-                <span class="kc-option-letter">B</span>
-                <span>Acetic acid (vinegar) and citric acid (tomatoes)</span>
-              </button>
-              <button class="kc-option-btn" data-answer="c">
-                <span class="kc-option-letter">C</span>
-                <span>Artificial coloring</span>
-              </button>
-              <button class="kc-option-btn" data-answer="d">
-                <span class="kc-option-letter">D</span>
-                <span>High fructose corn syrup</span>
-              </button>
-            </div>
-            <div class="kc-feedback" id="quiz-fb-1-correct">
-              Correct! Acetic acid from vinegar and citric acid from tomatoes are the key ingredients that can react with copper oxide tarnish.
-            </div>
-            <div class="kc-feedback" id="quiz-fb-1-incorrect">
-              Not quite. The acids in ketchup &mdash; acetic acid from vinegar and citric acid from tomatoes &mdash; are what react with the copper oxide tarnish.
-            </div>
-          </div>
-
-          <div class="kc-quiz-q" data-question="2">
-            <span class="kc-quiz-q-num">Question 2 of 3</span>
-            <h3>What is the dark coating on tarnished copper primarily made of?</h3>
-            <div class="kc-options" role="group" aria-label="Question 2 choices">
-              <button class="kc-option-btn" data-answer="a">
-                <span class="kc-option-letter">A</span>
-                <span>Rust (iron oxide)</span>
-              </button>
-              <button class="kc-option-btn" data-answer="b">
-                <span class="kc-option-letter">B</span>
-                <span>Mold and mildew</span>
-              </button>
-              <button class="kc-option-btn" data-answer="c" data-correct="true">
-                <span class="kc-option-letter">C</span>
-                <span>Copper oxide and copper carbonate</span>
-              </button>
-              <button class="kc-option-btn" data-answer="d">
-                <span class="kc-option-letter">D</span>
-                <span>Dried mineral deposits</span>
-              </button>
-            </div>
-            <div class="kc-feedback" id="quiz-fb-2-correct">
-              Correct! Copper tarnish is primarily copper oxide (CuO) and copper carbonate, formed when copper reacts with oxygen and carbon dioxide in the air.
-            </div>
-            <div class="kc-feedback" id="quiz-fb-2-incorrect">
-              Not quite. Copper tarnish is primarily copper oxide (CuO) and copper carbonate &mdash; not rust, which is iron oxide. Copper and iron oxidize differently.
-            </div>
-          </div>
-
-          <div class="kc-quiz-q" data-question="3">
-            <span class="kc-quiz-q-num">Question 3 of 3</span>
-            <h3>In the original observation, approximately how long was ketchup left on the copper sink?</h3>
-            <div class="kc-options" role="group" aria-label="Question 3 choices">
-              <button class="kc-option-btn" data-answer="a">
-                <span class="kc-option-letter">A</span>
-                <span>5 minutes</span>
-              </button>
-              <button class="kc-option-btn" data-answer="b" data-correct="true">
-                <span class="kc-option-letter">B</span>
-                <span>About 20 minutes</span>
-              </button>
-              <button class="kc-option-btn" data-answer="c">
-                <span class="kc-option-letter">C</span>
-                <span>1 hour</span>
-              </button>
-              <button class="kc-option-btn" data-answer="d">
-                <span class="kc-option-letter">D</span>
-                <span>Overnight</span>
-              </button>
-            </div>
-            <div class="kc-feedback" id="quiz-fb-3-correct">
-              Correct! The ketchup was accidentally left on the copper sink for approximately 20 minutes before being rinsed away.
-            </div>
-            <div class="kc-feedback" id="quiz-fb-3-incorrect">
-              The ketchup was accidentally left for about 20 minutes. It wasn't planned &mdash; it happened while making a burger and fries!
-            </div>
-          </div>
-
+        <div class="kc-stage-header">
+          <span class="kc-stage-badge copper">Stage 3</span>
+          <h2 class="kc-stage-title" id="challenge-heading">The Ketchup Challenge</h2>
+          <p class="kc-stage-desc">Follow these five steps to run your own ketchup-and-copper experiment.</p>
         </div>
 
-        <div class="kc-quiz-score" id="quiz-score">
-          <span class="kc-quiz-score-number" id="quiz-score-number">0/3</span>
-          <span class="kc-quiz-score-label" id="quiz-score-label">Questions answered correctly</span>
+        <div class="kc-challenge-card">
+          <div class="kc-progress-row">
+            <div class="kc-progress-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="5" aria-label="Worksheet progress">
+              <div class="kc-progress-fill" id="ws-progress-fill"></div>
+            </div>
+            <span class="kc-progress-count" id="ws-progress-count">0 / 5</span>
+          </div>
+
+          <ol class="kc-steps" id="ws-steps">
+            <li class="kc-step" data-step="1">
+              <button class="kc-step-toggle" aria-label="Mark step 1 as complete">
+                <span class="kc-step-num"></span>
+              </button>
+              <div class="kc-step-body">
+                <h3>Gather Your Materials</h3>
+                <p>You need: a bottle of ketchup, a copper item (penny, jewelry, or small copper piece you own), paper towels, a camera or phone, and a timer.</p>
+              </div>
+            </li>
+            <li class="kc-step" data-step="2">
+              <button class="kc-step-toggle" aria-label="Mark step 2 as complete">
+                <span class="kc-step-num"></span>
+              </button>
+              <div class="kc-step-body">
+                <h3>Document the Before</h3>
+                <p>Take a clear, well-lit photograph of the tarnished copper surface. Note the lighting conditions and camera angle so you can replicate them later.</p>
+              </div>
+            </li>
+            <li class="kc-step" data-step="3">
+              <button class="kc-step-toggle" aria-label="Mark step 3 as complete">
+                <span class="kc-step-num"></span>
+              </button>
+              <div class="kc-step-body">
+                <h3>Apply Ketchup &amp; Wait</h3>
+                <p>Apply a small amount of ketchup to a test area. Set a timer for 20 minutes. Record the ketchup brand and variety you used.</p>
+              </div>
+            </li>
+            <li class="kc-step" data-step="4">
+              <button class="kc-step-toggle" aria-label="Mark step 4 as complete">
+                <span class="kc-step-num"></span>
+              </button>
+              <div class="kc-step-body">
+                <h3>Rinse &amp; Observe</h3>
+                <p>When the timer goes off, rinse the area with water only &mdash; do not scrub. Observe carefully: did the surface change? Look the same? Something unexpected?</p>
+              </div>
+            </li>
+            <li class="kc-step" data-step="5">
+              <button class="kc-step-toggle" aria-label="Mark step 5 as complete">
+                <span class="kc-step-num"></span>
+              </button>
+              <div class="kc-step-body">
+                <h3>Document the After</h3>
+                <p>Photograph the tested area under the same lighting and at the same angle as your before photo. Compare the two images side by side. Record your honest findings.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="kc-ws-done" id="ws-done">
+            <span class="kc-ws-done-icon" aria-hidden="true">&#127942;</span>
+            <strong>Experiment Complete!</strong>
+            <p>You've followed the scientific method: observe, hypothesize, test, and record. Share your results with the community!</p>
+          </div>
+
+          <div class="kc-safety-notice">
+            <strong>Safety Notice:</strong> This experiment uses ordinary household ketchup. Do not mix ketchup with cleaning chemicals. Test only on items you own and have confirmed are solid copper. Do not use on collectible coins, plated items, lacquered surfaces, or items with gemstones. Always check manufacturer care instructions first. Results may vary. This is an observation-based activity, not a scientifically proven cleaning method.
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ================================================================
-         FINAL CTA
+         STAGE 5 — Y'ALL TOO SCIENCE LAB
          ================================================================ -->
-    <section class="kc-final-cta" aria-labelledby="kc-final-heading">
+    <section class="kc-stage kc-stage-science" id="kc-sciencelab" aria-labelledby="science-heading">
       <div class="kc-container">
-        <h2 id="kc-final-heading">Stay Curious.<br /><span>Keep Discovering.</span></h2>
-        <p>Science starts with a simple question. Whether you're watching, experimenting, or sharing your results &mdash; you're part of the discovery.</p>
-        <div class="kc-final-cta-links">
-          <a class="kc-btn-primary" href="#kc-videos">Watch the Videos</a>
-          <a class="kc-btn-secondary" href="#kc-worksheet">Start the Challenge</a>
+        <div class="kc-stage-header">
+          <span class="kc-stage-badge pink">Stage 4</span>
+          <h2 class="kc-stage-title" id="science-heading">Y'all Too Science Lab</h2>
+          <p class="kc-stage-desc">Discover the chemistry behind this surprising observation.</p>
+        </div>
+
+        <div class="kc-learn-grid">
+          <article class="kc-learn-card kc-learn-acid">
+            <div class="kc-learn-icon" aria-hidden="true">&#129514;</div>
+            <h3>Acetic Acid (Vinegar)</h3>
+            <p>Ketchup contains vinegar, which is acetic acid. This weak acid may dissolve copper oxide &mdash; the dark tarnish that forms on copper surfaces over time.</p>
+          </article>
+          <article class="kc-learn-card kc-learn-citric">
+            <div class="kc-learn-icon" aria-hidden="true">&#127813;</div>
+            <h3>Citric Acid (Tomatoes)</h3>
+            <p>Tomatoes are naturally acidic, containing citric acid. Working alongside the vinegar, this provides a second pathway that may help break down copper tarnish.</p>
+          </article>
+          <article class="kc-learn-card kc-learn-reaction">
+            <div class="kc-learn-icon" aria-hidden="true">&#9883;</div>
+            <h3>The Chemical Reaction</h3>
+            <p>When these acids contact copper oxide (CuO), they can break it into soluble copper salts that rinse away with water &mdash; potentially revealing the cleaner copper underneath.</p>
+          </article>
+        </div>
+
+        <!-- Y'ALL TOO RADIO -->
+        <div class="kc-radio-section" id="kc-radio">
+          <span class="kc-card-label pink">Featured on Y'all Too Radio</span>
+          <h3>Y'all Too Radio: The Ketchup Episode</h3>
+          <p>Hear the full story, the science behind it, and what the community is discovering.</p>
+          <div class="kc-radio-player">
+            <div class="kc-video-embed" data-video-id="tY7hCDz_Wwc">
+              <img class="kc-video-thumb" src="https://img.youtube.com/vi/tY7hCDz_Wwc/hqdefault.jpg" alt="Play: Y'all Too Radio — The Ketchup Episode" loading="lazy" />
+              <button class="kc-play-btn" aria-label="Play Y'all Too Radio episode">
+                <svg viewBox="0 0 68 48" aria-hidden="true"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#f00"/><path d="M45 24L27 14v20" fill="#fff"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- DISCOVERY QUIZ -->
+        <div class="kc-quiz-section" id="kc-quiz">
+          <span class="kc-card-label blue">Test Your Knowledge</span>
+          <h3>The Ketchup &amp; Copper Discovery Quiz</h3>
+          <p>See how much you've learned about the science behind this surprising discovery.</p>
+
+          <div class="kc-quiz-questions" id="quiz-questions">
+            <div class="kc-quiz-q" data-question="1">
+              <span class="kc-quiz-num">Question 1 of 3</span>
+              <h4>What ingredients in ketchup may help clean copper tarnish?</h4>
+              <div class="kc-choices" role="group" aria-label="Question 1 choices">
+                <button class="kc-choice" data-answer="a"><span class="kc-choice-letter">A</span><span class="kc-choice-text">Sugar and salt</span></button>
+                <button class="kc-choice" data-answer="b" data-correct="true"><span class="kc-choice-letter">B</span><span class="kc-choice-text">Acetic acid (vinegar) and citric acid (tomatoes)</span></button>
+                <button class="kc-choice" data-answer="c"><span class="kc-choice-letter">C</span><span class="kc-choice-text">Artificial coloring</span></button>
+                <button class="kc-choice" data-answer="d"><span class="kc-choice-letter">D</span><span class="kc-choice-text">High fructose corn syrup</span></button>
+              </div>
+              <div class="kc-feedback" id="quiz-fb-1-correct">Correct! Acetic acid from vinegar and citric acid from tomatoes are the key ingredients that may react with copper oxide tarnish.</div>
+              <div class="kc-feedback" id="quiz-fb-1-incorrect">Not quite. The acids in ketchup &mdash; acetic acid from vinegar and citric acid from tomatoes &mdash; are what may react with the copper oxide tarnish.</div>
+            </div>
+
+            <div class="kc-quiz-q" data-question="2">
+              <span class="kc-quiz-num">Question 2 of 3</span>
+              <h4>What is the dark coating on tarnished copper primarily made of?</h4>
+              <div class="kc-choices" role="group" aria-label="Question 2 choices">
+                <button class="kc-choice" data-answer="a"><span class="kc-choice-letter">A</span><span class="kc-choice-text">Rust (iron oxide)</span></button>
+                <button class="kc-choice" data-answer="b"><span class="kc-choice-letter">B</span><span class="kc-choice-text">Mold and mildew</span></button>
+                <button class="kc-choice" data-answer="c" data-correct="true"><span class="kc-choice-letter">C</span><span class="kc-choice-text">Copper oxide and copper carbonate</span></button>
+                <button class="kc-choice" data-answer="d"><span class="kc-choice-letter">D</span><span class="kc-choice-text">Dried mineral deposits</span></button>
+              </div>
+              <div class="kc-feedback" id="quiz-fb-2-correct">Correct! Copper tarnish is primarily copper oxide (CuO) and copper carbonate, formed when copper reacts with oxygen and carbon dioxide in the air.</div>
+              <div class="kc-feedback" id="quiz-fb-2-incorrect">Not quite. Copper tarnish is primarily copper oxide (CuO) and copper carbonate &mdash; not rust, which is iron oxide. Copper and iron oxidize differently.</div>
+            </div>
+
+            <div class="kc-quiz-q" data-question="3">
+              <span class="kc-quiz-num">Question 3 of 3</span>
+              <h4>In the original observation, approximately how long was ketchup left on the copper sink?</h4>
+              <div class="kc-choices" role="group" aria-label="Question 3 choices">
+                <button class="kc-choice" data-answer="a"><span class="kc-choice-letter">A</span><span class="kc-choice-text">5 minutes</span></button>
+                <button class="kc-choice" data-answer="b" data-correct="true"><span class="kc-choice-letter">B</span><span class="kc-choice-text">About 20 minutes</span></button>
+                <button class="kc-choice" data-answer="c"><span class="kc-choice-letter">C</span><span class="kc-choice-text">1 hour</span></button>
+                <button class="kc-choice" data-answer="d"><span class="kc-choice-letter">D</span><span class="kc-choice-text">Overnight</span></button>
+              </div>
+              <div class="kc-feedback" id="quiz-fb-3-correct">Correct! The ketchup was accidentally left on the copper sink for approximately 20 minutes before being rinsed away.</div>
+              <div class="kc-feedback" id="quiz-fb-3-incorrect">The ketchup was accidentally left for about 20 minutes. It wasn't planned &mdash; it happened while making a burger and fries!</div>
+            </div>
+          </div>
+
+          <div class="kc-quiz-result" id="quiz-result">
+            <div class="kc-quiz-score-card">
+              <span class="kc-quiz-score-icon" aria-hidden="true">&#127891;</span>
+              <span class="kc-quiz-score-num" id="quiz-score-num">0/3</span>
+              <span class="kc-quiz-score-label" id="quiz-score-label">Questions answered correctly</span>
+              <button class="kc-btn kc-btn-blue" id="quiz-restart-btn">Try Again</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         STAGE 6 — THE DISCOVERY FINISH LINE
+         ================================================================ -->
+    <section class="kc-stage kc-stage-finish" id="kc-finish" aria-labelledby="finish-heading">
+      <div class="kc-container">
+        <div class="kc-stage-header">
+          <span class="kc-stage-badge gold">Stage 5</span>
+          <h2 class="kc-stage-title kc-finish-title" id="finish-heading">Stay Curious.<br /><span>Keep Discovering!</span></h2>
+          <p class="kc-stage-desc kc-finish-desc">Every great discovery begins with a question. Make a prediction, test your ideas, and see what you discover.</p>
+        </div>
+
+        <!-- Achievement Summary -->
+        <div class="kc-achievements" id="achievements-panel">
+          <h3 class="kc-achievements-title">Your Achievements</h3>
+          <div class="kc-badge-grid">
+            <div class="kc-badge" id="badge-investigator" data-achievement="investigator">
+              <span class="kc-badge-icon">&#128270;</span>
+              <strong>Ketchup Investigator</strong>
+              <span class="kc-badge-status">Submit a prediction</span>
+            </div>
+            <div class="kc-badge" id="badge-detective" data-achievement="detective">
+              <span class="kc-badge-icon">&#128373;</span>
+              <strong>Copper Detective</strong>
+              <span class="kc-badge-status">Complete all 5 steps</span>
+            </div>
+            <div class="kc-badge" id="badge-challenger" data-achievement="challenger">
+              <span class="kc-badge-icon">&#129514;</span>
+              <strong>Chemistry Challenger</strong>
+              <span class="kc-badge-status">Answer all 3 quiz questions</span>
+            </div>
+            <div class="kc-badge kc-badge-champion" id="badge-champion" data-achievement="champion">
+              <span class="kc-badge-icon">&#127942;</span>
+              <strong>Discovery Champion</strong>
+              <span class="kc-badge-status">Complete all activities</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="kc-finish-actions">
+          <a class="kc-btn kc-btn-cyan" href="#kc-videos">Watch the Videos</a>
+          <a class="kc-btn kc-btn-copper" href="#kc-challenge">Revisit the Experiment</a>
+          <button class="kc-btn kc-btn-blue" id="restart-all-btn">Restart Activities</button>
+          <button class="kc-btn kc-btn-outline-dark" id="share-btn">Share This Discovery</button>
+        </div>
+
+        <!-- Logo in finish -->
+        <div class="kc-finish-brand">
+          <img src="https://assets.zyrosite.com/YZ9jg46Bljs5wOZR/gei-logo-gwP3315oRt91xpE8.png" alt="Y'all Too" width="48" height="48" class="kc-finish-logo" />
+          <span>A Y'all Too Discovery Project</span>
         </div>
       </div>
     </section>
@@ -444,13 +472,13 @@
        ================================================================ -->
   <footer class="kc-footer">
     <div class="kc-container">
-      <span class="kc-footer-brand">
-        <span class="brand-yt">Y'ALL TOO</span>
-        <span class="brand-divider">|</span>
-        <span class="brand-kc">KETCHUP &amp; COPPER</span>
-      </span>
-      <p>A Y'all Too Discovery Project</p>
-      <p style="margin-top: 6px;">Questions or collaboration? <a href="mailto:Contact@yalltoo.com">Contact@yalltoo.com</a></p>
+      <div class="kc-footer-inner">
+        <div class="kc-footer-brand">
+          <img src="https://assets.zyrosite.com/YZ9jg46Bljs5wOZR/gei-logo-gwP3315oRt91xpE8.png" alt="Y'all Too" width="24" height="24" class="kc-footer-logo" />
+          <span class="kc-footer-text">Y'ALL TOO <span class="kc-footer-sep">|</span> KETCHUP &amp; COPPER</span>
+        </div>
+        <p>Questions or collaboration? <a href="mailto:Contact@yalltoo.com">Contact@yalltoo.com</a></p>
+      </div>
     </div>
   </footer>
 
@@ -461,7 +489,102 @@
     (function () {
       "use strict";
 
-      function initVideoPlayers() {
+      var STORAGE_KEY_WS = "kc-worksheet-progress";
+      var STORAGE_KEY_ACH = "kc-achievements";
+      var SITE_URL = "https://jawa-dam.github.io/Ketchup-clean-copper/";
+
+      var achievements = { investigator: false, detective: false, challenger: false, champion: false };
+
+      var ACHIEVEMENT_META = {
+        investigator: { icon: "🔍", title: "Ketchup Investigator", desc: "You submitted a prediction!" },
+        detective:    { icon: "🕵", title: "Copper Detective", desc: "You completed all 5 experiment steps!" },
+        challenger:   { icon: "🧪", title: "Chemistry Challenger", desc: "You answered all 3 quiz questions!" },
+        champion:     { icon: "🏆", title: "Discovery Champion", desc: "You completed every activity!" }
+      };
+
+      /* ---- Storage helpers ---- */
+      function storageGet(key) {
+        try { var v = localStorage.getItem(key); return v ? JSON.parse(v) : null; } catch (e) { return null; }
+      }
+      function storageSet(key, val) {
+        try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) { /* unavailable */ }
+      }
+
+      /* ---- Achievement system ---- */
+      function loadAchievements() {
+        var saved = storageGet(STORAGE_KEY_ACH);
+        if (saved) {
+          for (var k in saved) { if (achievements.hasOwnProperty(k)) achievements[k] = saved[k]; }
+        }
+        updateBadgeDisplay();
+      }
+
+      function unlockAchievement(key) {
+        if (achievements[key]) return;
+        achievements[key] = true;
+        storageSet(STORAGE_KEY_ACH, achievements);
+        updateBadgeDisplay();
+        showToast(key);
+        if (!achievements.champion && achievements.investigator && achievements.detective && achievements.challenger) {
+          setTimeout(function () { unlockAchievement("champion"); }, 1200);
+        }
+      }
+
+      function updateBadgeDisplay() {
+        for (var k in achievements) {
+          var el = document.getElementById("badge-" + k);
+          if (el) {
+            if (achievements[k]) {
+              el.classList.add("earned");
+              var status = el.querySelector(".kc-badge-status");
+              if (status) status.textContent = "Earned!";
+            } else {
+              el.classList.remove("earned");
+            }
+          }
+        }
+        var bar = document.getElementById("scroll-bar-fill");
+        if (bar && achievements.champion) bar.classList.add("champion");
+      }
+
+      var toastTimer = null;
+      function showToast(key) {
+        var toast = document.getElementById("achievement-toast");
+        var icon = document.getElementById("toast-icon");
+        var title = document.getElementById("toast-title");
+        var desc = document.getElementById("toast-desc");
+        if (!toast || !ACHIEVEMENT_META[key]) return;
+        var meta = ACHIEVEMENT_META[key];
+        icon.textContent = meta.icon;
+        title.textContent = meta.title;
+        desc.textContent = meta.desc;
+        toast.classList.add("show");
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () { toast.classList.remove("show"); }, 3500);
+      }
+
+      /* ---- Scroll progress ---- */
+      function initScrollProgress() {
+        var fill = document.getElementById("scroll-bar-fill");
+        var bar = fill ? fill.parentElement : null;
+        if (!fill || !bar) return;
+        var ticking = false;
+        function update() {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var pct = docHeight > 0 ? Math.min(100, Math.round((scrollTop / docHeight) * 100)) : 0;
+          fill.style.width = pct + "%";
+          bar.setAttribute("aria-valuenow", pct);
+          ticking = false;
+        }
+        window.addEventListener("scroll", function () {
+          if (!ticking) { ticking = true; requestAnimationFrame(update); }
+        }, { passive: true });
+        update();
+      }
+
+      /* ---- Video click-to-load ---- */
+      function initVideos() {
         document.querySelectorAll("[data-video-id]").forEach(function (embed) {
           embed.addEventListener("click", function () {
             var videoId = embed.getAttribute("data-video-id");
@@ -472,7 +595,7 @@
             iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
             iframe.allowFullscreen = true;
             var thumb = embed.querySelector(".kc-video-thumb");
-            var btn = embed.querySelector(".kc-video-play");
+            var btn = embed.querySelector(".kc-play-btn");
             if (thumb) thumb.remove();
             if (btn) btn.remove();
             embed.appendChild(iframe);
@@ -481,134 +604,265 @@
         });
       }
 
+      /* ---- Prediction ---- */
       function initPrediction() {
-        var container = document.getElementById("prediction-options");
+        var container = document.getElementById("prediction-choices");
         if (!container) return;
-        var buttons = container.querySelectorAll(".kc-option-btn");
+        var buttons = container.querySelectorAll(".kc-choice");
         var answered = false;
-
         buttons.forEach(function (btn) {
           btn.addEventListener("click", function () {
             if (answered) return;
             answered = true;
             var isCorrect = btn.hasAttribute("data-correct");
-
             buttons.forEach(function (b) {
               b.disabled = true;
-              b.classList.remove("selected");
-              if (b.hasAttribute("data-correct")) {
-                b.classList.add("correct");
-              } else if (b === btn && !isCorrect) {
-                b.classList.add("incorrect");
-              }
+              if (b.hasAttribute("data-correct")) b.classList.add("correct");
+              else if (b === btn && !isCorrect) b.classList.add("incorrect");
             });
-
-            var correctFb = document.getElementById("prediction-feedback-correct");
-            var incorrectFb = document.getElementById("prediction-feedback-incorrect");
-            if (isCorrect) {
-              correctFb.classList.add("show", "correct");
-            } else {
-              incorrectFb.classList.add("show", "incorrect");
-            }
+            var fbC = document.getElementById("predict-fb-correct");
+            var fbI = document.getElementById("predict-fb-incorrect");
+            if (isCorrect && fbC) fbC.classList.add("show", "correct");
+            else if (fbI) fbI.classList.add("show", "incorrect");
+            unlockAchievement("investigator");
           });
         });
       }
 
+      /* ---- Worksheet ---- */
       function initWorksheet() {
-        var steps = document.querySelectorAll("#worksheet-steps .kc-step");
-        var progressFill = document.getElementById("worksheet-progress");
-        var doneMsg = document.getElementById("worksheet-done");
-        var progressBar = progressFill ? progressFill.parentElement : null;
+        var steps = document.querySelectorAll("#ws-steps .kc-step");
+        var fill = document.getElementById("ws-progress-fill");
+        var countEl = document.getElementById("ws-progress-count");
+        var doneEl = document.getElementById("ws-done");
+        var bar = fill ? fill.parentElement : null;
         var total = steps.length;
-        var completed = 0;
+        var completed = new Set();
+
+        var saved = storageGet(STORAGE_KEY_WS);
+        if (saved && Array.isArray(saved)) {
+          saved.forEach(function (n) {
+            var step = document.querySelector('#ws-steps .kc-step[data-step="' + n + '"]');
+            if (step) { step.classList.add("completed"); completed.add(n); }
+          });
+          updateProgress();
+        }
+
+        function updateProgress() {
+          var pct = Math.round((completed.size / total) * 100);
+          if (fill) fill.style.width = pct + "%";
+          if (countEl) countEl.textContent = completed.size + " / " + total;
+          if (bar) bar.setAttribute("aria-valuenow", completed.size);
+          if (doneEl) {
+            if (completed.size === total) { doneEl.classList.add("show"); unlockAchievement("detective"); }
+            else doneEl.classList.remove("show");
+          }
+          storageSet(STORAGE_KEY_WS, Array.from(completed));
+        }
 
         steps.forEach(function (step) {
-          var check = step.querySelector(".kc-step-check");
-          if (!check) return;
-          check.addEventListener("click", function () {
+          var toggle = step.querySelector(".kc-step-toggle");
+          if (!toggle) return;
+          toggle.addEventListener("click", function () {
+            var n = parseInt(step.getAttribute("data-step"), 10);
             if (step.classList.contains("completed")) {
               step.classList.remove("completed");
-              completed--;
+              completed.delete(n);
             } else {
               step.classList.add("completed");
-              completed++;
+              completed.add(n);
             }
-            var pct = Math.round((completed / total) * 100);
-            if (progressFill) progressFill.style.width = pct + "%";
-            if (progressBar) progressBar.setAttribute("aria-valuenow", completed);
-            if (doneMsg) {
-              if (completed === total) {
-                doneMsg.classList.add("show");
-              } else {
-                doneMsg.classList.remove("show");
-              }
-            }
+            updateProgress();
           });
         });
+
+        return function resetWorksheet() {
+          completed.clear();
+          steps.forEach(function (s) { s.classList.remove("completed"); });
+          updateProgress();
+        };
       }
 
+      /* ---- Quiz ---- */
       function initQuiz() {
-        var questions = document.querySelectorAll("#quiz-questions .kc-quiz-q");
-        var totalQ = questions.length;
+        var questionsEl = document.getElementById("quiz-questions");
+        var resultEl = document.getElementById("quiz-result");
+        var scoreNum = document.getElementById("quiz-score-num");
+        var scoreLabel = document.getElementById("quiz-score-label");
+        var restartBtn = document.getElementById("quiz-restart-btn");
+        if (!questionsEl) return null;
+
+        var totalQ = 3;
         var answeredCount = 0;
         var correctCount = 0;
 
-        questions.forEach(function (qBlock) {
-          var qNum = qBlock.getAttribute("data-question");
-          var buttons = qBlock.querySelectorAll(".kc-option-btn");
-          var qAnswered = false;
+        function setupQuiz() {
+          answeredCount = 0;
+          correctCount = 0;
+          if (resultEl) resultEl.classList.remove("show");
 
-          buttons.forEach(function (btn) {
-            btn.addEventListener("click", function () {
-              if (qAnswered) return;
-              qAnswered = true;
-              answeredCount++;
-              var isCorrect = btn.hasAttribute("data-correct");
-              if (isCorrect) correctCount++;
+          var qs = questionsEl.querySelectorAll(".kc-quiz-q");
+          qs.forEach(function (qBlock) {
+            var qNum = qBlock.getAttribute("data-question");
+            var buttons = qBlock.querySelectorAll(".kc-choice");
+            var qAnswered = false;
 
-              buttons.forEach(function (b) {
-                b.disabled = true;
-                if (b.hasAttribute("data-correct")) {
-                  b.classList.add("correct");
-                } else if (b === btn && !isCorrect) {
-                  b.classList.add("incorrect");
+            var fbC = document.getElementById("quiz-fb-" + qNum + "-correct");
+            var fbI = document.getElementById("quiz-fb-" + qNum + "-incorrect");
+            if (fbC) fbC.classList.remove("show", "correct");
+            if (fbI) fbI.classList.remove("show", "incorrect");
+
+            buttons.forEach(function (b) {
+              b.disabled = false;
+              b.classList.remove("correct", "incorrect");
+              var newBtn = b.cloneNode(true);
+              b.parentNode.replaceChild(newBtn, b);
+            });
+
+            qBlock.querySelectorAll(".kc-choice").forEach(function (btn) {
+              btn.addEventListener("click", function () {
+                if (qAnswered) return;
+                qAnswered = true;
+                answeredCount++;
+                var isCorrect = btn.hasAttribute("data-correct");
+                if (isCorrect) correctCount++;
+
+                qBlock.querySelectorAll(".kc-choice").forEach(function (b) {
+                  b.disabled = true;
+                  if (b.hasAttribute("data-correct")) b.classList.add("correct");
+                  else if (b === btn && !isCorrect) b.classList.add("incorrect");
+                });
+
+                if (isCorrect && fbC) fbC.classList.add("show", "correct");
+                else if (!isCorrect && fbI) fbI.classList.add("show", "incorrect");
+
+                if (answeredCount === totalQ) {
+                  if (resultEl) resultEl.classList.add("show");
+                  if (scoreNum) scoreNum.textContent = correctCount + "/" + totalQ;
+                  if (scoreLabel) {
+                    if (correctCount === totalQ) scoreLabel.textContent = "Perfect score! You're a copper chemistry expert!";
+                    else if (correctCount >= 2) scoreLabel.textContent = "Great job! You know your ketchup science!";
+                    else scoreLabel.textContent = "Keep learning! Scroll up to review the science section.";
+                  }
+                  unlockAchievement("challenger");
                 }
               });
-
-              var correctFb = document.getElementById("quiz-fb-" + qNum + "-correct");
-              var incorrectFb = document.getElementById("quiz-fb-" + qNum + "-incorrect");
-              if (isCorrect && correctFb) {
-                correctFb.classList.add("show", "correct");
-              } else if (!isCorrect && incorrectFb) {
-                incorrectFb.classList.add("show", "incorrect");
-              }
-
-              if (answeredCount === totalQ) {
-                var scoreEl = document.getElementById("quiz-score");
-                var scoreNum = document.getElementById("quiz-score-number");
-                var scoreLabel = document.getElementById("quiz-score-label");
-                if (scoreEl) scoreEl.classList.add("show");
-                if (scoreNum) scoreNum.textContent = correctCount + "/" + totalQ;
-                if (scoreLabel) {
-                  if (correctCount === totalQ) {
-                    scoreLabel.textContent = "Perfect score! You're a copper chemistry expert!";
-                  } else if (correctCount >= 2) {
-                    scoreLabel.textContent = "Great job! You know your ketchup science!";
-                  } else {
-                    scoreLabel.textContent = "Keep learning! Scroll up to review the science section.";
-                  }
-                }
-              }
             });
+          });
+        }
+
+        setupQuiz();
+        if (restartBtn) restartBtn.addEventListener("click", setupQuiz);
+
+        return setupQuiz;
+      }
+
+      /* ---- Share ---- */
+      function initShare() {
+        var shareBtn = document.getElementById("share-btn");
+        if (!shareBtn) return;
+        shareBtn.addEventListener("click", function () {
+          var data = {
+            title: "Ketchup & Copper: The Great Cleaning Mystery",
+            text: "Can ketchup clean tarnished copper? Try the experiment and find out!",
+            url: SITE_URL
+          };
+          if (navigator.share) {
+            navigator.share(data).catch(function () {});
+          } else {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(SITE_URL).then(function () {
+                shareBtn.textContent = "Link Copied!";
+                setTimeout(function () { shareBtn.textContent = "Share This Discovery"; }, 2000);
+              }).catch(function () {
+                fallbackCopy();
+              });
+            } else {
+              fallbackCopy();
+            }
+          }
+          function fallbackCopy() {
+            var input = document.createElement("input");
+            input.value = SITE_URL;
+            document.body.appendChild(input);
+            input.select();
+            try { document.execCommand("copy"); shareBtn.textContent = "Link Copied!"; }
+            catch (e) { shareBtn.textContent = "Copy: " + SITE_URL; }
+            document.body.removeChild(input);
+            setTimeout(function () { shareBtn.textContent = "Share This Discovery"; }, 3000);
+          }
+        });
+      }
+
+      /* ---- Restart all ---- */
+      function initRestartAll(resetWs, resetQuiz) {
+        var btn = document.getElementById("restart-all-btn");
+        if (!btn) return;
+        btn.addEventListener("click", function () {
+          if (resetWs) resetWs();
+          if (resetQuiz) resetQuiz();
+
+          var predBtns = document.querySelectorAll("#prediction-choices .kc-choice");
+          predBtns.forEach(function (b) {
+            b.disabled = false;
+            b.classList.remove("correct", "incorrect");
+            var nb = b.cloneNode(true);
+            b.parentNode.replaceChild(nb, b);
+          });
+          var fbC = document.getElementById("predict-fb-correct");
+          var fbI = document.getElementById("predict-fb-incorrect");
+          if (fbC) fbC.classList.remove("show", "correct");
+          if (fbI) fbI.classList.remove("show", "incorrect");
+          initPrediction();
+
+          achievements = { investigator: false, detective: false, challenger: false, champion: false };
+          storageSet(STORAGE_KEY_ACH, achievements);
+          updateBadgeDisplay();
+          document.querySelectorAll(".kc-badge").forEach(function (b) {
+            b.classList.remove("earned");
+            var s = b.querySelector(".kc-badge-status");
+            if (s) {
+              var key = b.getAttribute("data-achievement");
+              if (key === "investigator") s.textContent = "Submit a prediction";
+              else if (key === "detective") s.textContent = "Complete all 5 steps";
+              else if (key === "challenger") s.textContent = "Answer all 3 quiz questions";
+              else if (key === "champion") s.textContent = "Complete all activities";
+            }
+          });
+          var scrollFill = document.getElementById("scroll-bar-fill");
+          if (scrollFill) scrollFill.classList.remove("champion");
+
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      }
+
+      /* ---- Smooth scroll for anchor links ---- */
+      function initSmoothScroll() {
+        document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+          a.addEventListener("click", function (e) {
+            var target = document.querySelector(a.getAttribute("href"));
+            if (target) {
+              e.preventDefault();
+              var topbarH = document.getElementById("kc-topbar");
+              var offset = topbarH ? topbarH.offsetHeight + 8 : 60;
+              var y = target.getBoundingClientRect().top + window.pageYOffset - offset;
+              window.scrollTo({ top: y, behavior: "smooth" });
+            }
           });
         });
       }
 
+      /* ---- Init ---- */
       function init() {
-        initVideoPlayers();
+        loadAchievements();
+        initScrollProgress();
+        initVideos();
         initPrediction();
-        initWorksheet();
-        initQuiz();
+        var resetWs = initWorksheet();
+        var resetQuiz = initQuiz();
+        initShare();
+        initRestartAll(resetWs, resetQuiz);
+        initSmoothScroll();
       }
 
       if (document.readyState === "loading") {
